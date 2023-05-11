@@ -19,11 +19,14 @@ function randomNumber () {
 }
 function randomOrderForRandomNumber () {
     let intArray = [] ;
-    for (let i = intArray.length; intArray.length < 5; i++) {
-        let n = randomNumber;
+
+    while (intArray.length < 5) {
+
+        let n = randomNumber();
         if (!intArray.includes(n)) {
             intArray.push(n);
         }
+        
         return intArray
     }
 }
